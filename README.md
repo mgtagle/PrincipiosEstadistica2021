@@ -11,3 +11,7 @@ Semana 1
 Semana 2
 + 10.02.2021
 + 11.02.2021: Primeros pasos usando Rstudio
+
+Semana 3
++ 17.02.2021: Laboratorio 1
++ 18.02.2021: 
