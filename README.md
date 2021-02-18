@@ -14,4 +14,4 @@ Semana 2
 
 Semana 3
 + 17.02.2021: Laboratorio 1
-+ 18.02.2021: 
++ 18.02.2021: Laboratorio 2
