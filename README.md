@@ -18,3 +18,4 @@ Semana 3
 
 Semana 4
 + 24.02.2021: Solución a problemas de Tarea 1
++ 25.02.2021: Estadísticas descriptivas
