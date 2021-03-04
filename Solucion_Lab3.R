@@ -73,4 +73,85 @@ sum(inventario$Vecinos)
 
 # Parte II:  --------------------------------------------------------------
 
+# Selección mediante restricciones
 
+dbh
+mean(dbh)        
+
+dbh < 10
+
+sum(dbh < 10)
+
+which(dbh < 10)
+
+
+dbh.url <- "https://raw.githubusercontent.com/mgtagle/PrincipiosEstadistica2021/main/DBH_1.csv"
+parcelas <- read.csv(dbh.url)
+
+
+tree.13 <- parcelas[!(parcelas$parcela == "2"),]
+
+tree.23 <- parcelas[!(parcelas$parcela == "1"),]
+
+tree.12 <- parcelas[!(parcelas$parcela == "3"),]
+
+
+# Revisar las medias del dbh en cada combinación de parcelas
+
+mean(tree.12$dbh); mean(tree.13$dbh); mean(tree.23$dbh)
+
+# Selección de submuestras ------------------------------------------------
+
+tree_mean <- subset(parcelas, dbh <= mean(parcelas$dbh))
+
+tree.up <- subset(parcelas, dbh >= mean(parcelas$dbh))
+
+mean(tree_mean$dbh); mean(tree.up$dbh)
+
+# Representación gráfica de los dos subconjuntos
+
+boxplot(tree_mean$dbh, main = "DBH <= media", col = "lightgreen", horizontal = TRUE)
+boxplot(tree.up$dbh, main = "DBH >= media", col = "yellow", horizontal = T)
+
+quantile(tree_mean$dbh, 0.5)
+quantile(tree_mean$dbh, 0.75)
+
+
+
+# Parte 3: representación gráfica -----------------------------------------
+
+mamiferos <- read.csv("https://www.openintro.org/data/csv/mammals.csv")
+
+mean(mamiferos$brain_wt)
+
+
+hist(mamiferos$total_sleep, col="lightgreen", 
+     ylim = c(0, 12), xlim = c(0, 22),
+     las = 1)
+
+hist(mamiferos$brain_wt)
+
+fivenum(mamiferos$brain_wt)
+
+data("chickwts")
+head(chickwts)
+
+alimentación <- table(chickwts$feed)
+alimentación
+
+barplot(alimentación)
+
+barplot(alimentación[order(alimentación, decreasing = TRUE)])
+
+orig.par <- par() # Originales de las gráficas
+par(oma=c(1,1,1,1))
+par(mar=c(4,5,2,1))
+
+barplot(alimentación[order(alimentación)],
+        horiz = TRUE,
+        las = 1,
+        col = c("#ffcc00", "#ffd11a", "#ffd633", "#ffdb4d", "#ffe066", "#ffe680"),
+        main = "Frecuencias por tipos de
+        alimentación",
+        xlab = "Número de Pollos")
+orig.par
