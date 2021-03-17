@@ -27,3 +27,7 @@ Semana 5
 Semana 6
 + 10.03.2021: Resumen gráfico de un conjunto de datos
 + 11.03.2021: Histogramas, barplot y pie (cuadro1.csv)
+
+Semana 7
++ 17.03.2021: Correlación entre dos variables.
++ 18.03.2021: 
