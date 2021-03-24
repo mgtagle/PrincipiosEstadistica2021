@@ -171,3 +171,47 @@ barplot(data$value, names= data$name,
         col=c("green", "yellow", "orange", "red", "purple"),
         ylab="Superficie (has)",
         xlab = "Severidad")
+
+
+
+# 24 de marzo correlación -------------------------------------------------
+
+
+data("anscombe")
+anscombe
+
+summary(anscombe[ , 1:4])
+sd(anscombe$x1)
+sd(anscombe$x2)
+
+
+summary(anscombe[ , 5:8])
+sd(anscombe$y1)
+sd(anscombe$y3)
+
+cor.test(anscombe$x1, anscombe$y1)
+
+cor.test(anscombe$x2, anscombe$y2)
+
+cor.test(anscombe$x3, anscombe$y3)
+
+cor.test(anscombe$x4, anscombe$y4)
+
+
+
+plot(anscombe$x1, anscombe$y1, pch=16, col="red")
+abline(lm(anscombe$y1 ~ anscombe$x1), col="red")
+
+
+plot(anscombe$x2, anscombe$y2, pch=16, col="green")
+abline(lm(anscombe$y2~ anscombe$x2), col="red")
+
+
+plot(anscombe$x3, anscombe$y3, pch=16, col="yellow")
+abline(lm(anscombe$y3~ anscombe$x3), col="red")
+
+
+plot(anscombe$x4, anscombe$y4, pch=16, col="purple")
+abline(lm(anscombe$y4~ anscombe$x4), col="red")
+
+
