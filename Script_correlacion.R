@@ -29,3 +29,7 @@ cor.test(virginica$Petal.Width, virginica$Petal.Length)
 
 plot(virginica$Sepal.Width, virginica$Sepal.Length)
 cor.test(virginica$Sepal.Length, virginica$Sepal.Width)
+
+
+
+

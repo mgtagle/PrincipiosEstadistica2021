@@ -31,3 +31,7 @@ Semana 6
 Semana 7
 + 17.03.2021: Correlación entre dos variables.
 + 18.03.2021: Correlación ejercicios
+
+Semnana 8
++ 24.03.2021: Correlación (continuación).
++25.03.2021: 

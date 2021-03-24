@@ -155,3 +155,19 @@ barplot(alimentación[order(alimentación)],
         alimentación",
         xlab = "Número de Pollos")
 orig.par
+
+
+superficie <- c(36.8, 182.9, 96.52, 203.24, 4.08)
+nom <- c("No quemado", "Baja", "Mod-b", "Mod-a", "Alta")
+
+
+# Instrucciones t.ly/98jG
+data <- data.frame(
+        name=nom,
+        value=superficie
+)
+
+barplot(data$value, names= data$name,
+        col=c("green", "yellow", "orange", "red", "purple"),
+        ylab="Superficie (has)",
+        xlab = "Severidad")
