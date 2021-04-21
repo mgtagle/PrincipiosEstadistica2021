@@ -32,6 +32,15 @@ Semana 7
 + 17.03.2021: Correlación entre dos variables.
 + 18.03.2021: Correlación ejercicios
 
-Semnana 8
+Semana 8
 + 24.03.2021: Correlación (continuación).
-+25.03.2021: 
++ 25.03.2021: 
+
+
+Semana 9
++ 14.04.2021 Análisis de regresión
++ 15.04.2021 Asincrona
+
+Semana 10
++ 21.04.2021 Análisis de regresión
++ 22.01.2021
