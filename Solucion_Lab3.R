@@ -214,4 +214,38 @@ abline(lm(anscombe$y3~ anscombe$x3), col="red")
 plot(anscombe$x4, anscombe$y4, pch=16, col="purple")
 abline(lm(anscombe$y4~ anscombe$x4), col="red")
 
+# Grafica de incendios
 
+
+years <- c(1998, 2011, 2013, 2015, 2016:2021)
+fire <- c(14445, 12113, 10406, 3809, 8422, 8896, 6970, 7410, 5913, 2429)
+sup <- c(849633, 956405, 413216, 88538, 272776, 726361, 488162, 633678, 378928, 46986)
+incendios <- data.frame(years, fire, sup)
+incendios$years <- as.factor(incendios$years)
+str(incendios)
+
+barplot(incendios$sup)
+library(ggplot2)
+
+ggplot(incendios) +
+        geom_col(aes(x= years, y = fire), size= 1, col="#ff661a", fill= "#ff661a") +
+        geom_line(aes(x= years, y = 3*sup), size = 1.5, color = "#994d00", fill= "#994d00", group = 1) +
+        scale_y_continuous(sec.axis = sec.axis(~./3))
+ 
+
+par(mar = c(5, 5, 3, 5))
+barplot(incendios$sup, names=incendios$years, col="#D55E00", las =2, xlab="Años", cex.names =  0.9, ylab="Superficie (has)" )
+par(new=TRUE)
+plot(incendios$fire,  type ="b", lwd=3, xaxt="n", yaxt = "n", ylab="", xlab="", col="#1a1a1a")
+axis(side=4)
+mtext("beaver2 temperature", side = 4, line = 3)
+
+
+par(mar = c(5, 5, 3, 5))
+barplot(incendios$sup, names=incendios$years, col="#D55E00", las =2, xlab="Años", cex.names =  0.8, ylab="Incendios", yaxt = "n", cex.lab = 1.2)
+axis(side=4)
+par(new=TRUE)
+plot(incendios$fire,  type ="b", lwd=3, xaxt="n",  ylab="", xlab="", col="#1a1a1a", las =2)
+mtext("Superficie (has)", side = 4, line = 3)
+legend("topright", c("Incendio", "Sup"),
+       col = c("#1a1a1a", "#D55E00"), lty=c(1, NA),pch = c(NA, 15), box.lty=0, inset=.02)
