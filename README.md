@@ -44,3 +44,6 @@ Semana 9
 Semana 10
 + 21.04.2021 Análisis de regresión
 + 22.01.2021 Ejercicio datos canopy
+
+Semana 11
++ 28.04.2021 Normalidad y homogeneidad de varianza 

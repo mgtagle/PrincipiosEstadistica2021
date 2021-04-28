@@ -16,8 +16,8 @@ head(copa)
 summary(copa)
 
 plot(copa$Cnpy , copa$LAI4, pch=16)
-cor.test(copa$Cnpy, copa$LAI4)
-
+copa.cor <- cor.test(copa$Cnpy, copa$LAI4)
+copa.cor
 
 copa.lm <- lm(copa$LAI4 ~ copa$Cnpy)
 copa.lm
