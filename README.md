@@ -46,4 +46,8 @@ Semana 10
 + 22.01.2021 Ejercicio datos canopy
 
 Semana 11
-+ 28.04.2021 Normalidad y homogeneidad de varianza 
++ 28.04.2021 Normalidad y homogeneidad de varianzas 
++ 29.04.2021 Asincrona
+
+Semana 12
++ 12.04.2021 Prueba de T de una muestra
