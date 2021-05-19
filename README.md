@@ -6,7 +6,7 @@ Notas y bitácora de trabajo de la UA Principios de estadística 2021
 
 Semana 1
 + 03.02.2021: Primera clase del curso PE.
-+ 04.02.2021: Creación de la cuenta github y su primere repositorio, Instalación de las plataformas.
++ 04.02.2021: Creación de la cuenta github y su primer repositorio, Instalación de las plataformas.
 
 Semana 2
 + 10.02.2021
@@ -50,4 +50,9 @@ Semana 11
 + 29.04.2021 Asincrona
 
 Semana 12
-+ 12.04.2021 Prueba de T de una muestra
++ 12.05.2021 Prueba de T de una muestra
++ 13.05.2021 Prueba de T dos muestras independientes
+
+Semana 13
++ 19.05.2021 Pruebas de T dependientes
++ 20.05.2021 Fin de curso
